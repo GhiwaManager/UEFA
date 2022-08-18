@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <script src="js/script.js" defer></script>
+    <title>UEFA</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="image/logo.png" /></a>
+        </div>
+        <div class="link">
+          <ul class="links" id="links">
+            <a href="index.html">
+              <li>UEFA calculator</li>
+            </a>
+            <!-- <a href="">
+              <li>important things</li>
+            </a> -->
+            <a href="contact.html">
+              <li>contact us</li>
+            </a>
+            <!-- <a href="">
+              <li>hot events</li>
+            </a> -->
+          </ul>
+        </div>
+        <div class="bars" id="bars">
+          <i class="fa-solid fa-bars" id="bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- calc section -->
+    <section class="uefa-calc">
+      <div class="container">
+        <!-- vip calc -->
+        <div class="vip-calc">
+          <h2>VIP calculator</h2>
+          <form class="form-vip">
+            <input
+              type="number"
+              class="vip-money"
+              id="vip-money"
+              placeholder="Put your money here"
+            />
+            <input
+              type="number"
+              class="vip-day"
+              id="vip-days"
+              placeholder="Number of days"
+            />
+            <input
+              type="number"
+              class="vip-Rate"
+              id="vip-rate"
+              value="5.5"
+              disabled
+            />
+            <input
+              type="submit"
+              value="calc"
+              id="vip-btn"
+              class="btn btn-vip"
+            />
+          </form>
+          <div class="answer" id="vip-answer"></div>
+        </div>
+        <!-- Regular calc -->
+        <div class="regular-calc">
+          <h2>REGULAR calculator</h2>
+
+          <form class="form-regular">
+            <input
+              type="number"
+              class="regular-money"
+              id="reg-money"
+              placeholder="Put your money here"
+            />
+            <input
+              type="number"
+              class="regular-day"
+              id="reg-days"
+              placeholder="Number of days"
+            />
+            <input
+              type="number"
+              class="regular-Rate"
+              id="reg-rate"
+              value="4"
+              disabled
+            />
+            <input
+              type="submit"
+              value="calc"
+              id="reg-btn"
+              class="btn btn-regular"
+            />
+          </form>
+          <div class="answer" id="reg-answer"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end calc section -->
+  </body>
+</html>
